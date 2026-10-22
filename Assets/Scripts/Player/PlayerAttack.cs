@@ -5,7 +5,6 @@ namespace JPO
     public class PlayerAttack : MonoBehaviour
     {
         [SerializeField] private GameObject swordPivot;
-        [SerializeField] private TrailRenderer swordTrail;
         [SerializeField] private float attackDuration = 0.3f;
         [SerializeField] private float cooldownDuration = 0.5f;
         [SerializeField] private float startAttackAngle = 90f;
@@ -31,7 +30,6 @@ namespace JPO
 
             // Hide sword
             swordPivot.SetActive(false);
-            swordTrail.emitting = false;
         }
 
         private void Update()
@@ -54,7 +52,6 @@ namespace JPO
                 _cooldownTimer = Timer.None;
                 _isUnderCooldown = false;
                 // Hide sword visual
-                swordTrail.emitting = false;
                 swordPivot.SetActive(false);
                 // Restart the attack if the attack button is still pressed
                 if (_isAttackButtonPressed) AttackStart();
@@ -106,8 +103,6 @@ namespace JPO
                     ? startAttackAngle
                     : -startAttackAngle
             );
-            swordTrail.Clear();
-            swordTrail.emitting = true;
             swordPivot.SetActive(true);
         }
 
