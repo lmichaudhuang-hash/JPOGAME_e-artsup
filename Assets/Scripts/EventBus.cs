@@ -1,4 +1,5 @@
 using System;
+using UnityEditor;
 
 namespace JPO
 {
@@ -18,6 +19,8 @@ namespace JPO
         /// Event invoked when the game is paused or resumed
         /// </summary>
         public static event Action<bool> gamePauseChanged;
+
+        public static event Action<int> candyCollected;
 
         /// <summary>
         /// Invoke the playerDies event
@@ -41,6 +44,11 @@ namespace JPO
         public static void OnGamePauseChanged(bool isPaused)
         {
             gamePauseChanged?.Invoke(isPaused);
+        }
+
+        public static void OnCandyCollected(int candyCount)
+        {
+            candyCollected?.Invoke(candyCount);
         }
     }
 }

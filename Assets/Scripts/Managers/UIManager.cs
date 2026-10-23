@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using System.Collections;
+using System.Collections.Generic;
 namespace JPO
 {
     public class UIManager : MonoBehaviour
@@ -33,6 +34,7 @@ namespace JPO
         {
             Instance = this;
             EventBus.gamePauseChanged += HandleGamePauseChanged;
+            EventBus.candyCollected += UpdateCandyText;
         }
 
         private void Start()
@@ -40,6 +42,7 @@ namespace JPO
             ClosePauseMenu();
             HideBlackScreen();
             FadeWelcomeText();
+            UpdateCandyText(0);
         }
 
         private void OnDestroy()
@@ -47,6 +50,7 @@ namespace JPO
             _screenFadeTween?.Kill();
             _textSeq?.Kill();
             EventBus.gamePauseChanged -= HandleGamePauseChanged;
+            EventBus.candyCollected -= UpdateCandyText;
         }
 
         #region Black Screen
@@ -142,6 +146,19 @@ namespace JPO
             Time.timeScale = 1f;
             SceneManager.LoadScene(mainMenuSceneName);
         }
+        #endregion
+
+        #region Bonbons
+       
+        public TMP_Text candyText;
+
+        private void UpdateCandyText(int candyCount)
+        {
+            candyText.text = $"BONBONS: {candyCount:00}";
+        }
+      
+
+
         #endregion
     }
 }
