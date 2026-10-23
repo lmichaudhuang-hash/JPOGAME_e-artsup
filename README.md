@@ -1,5 +1,5 @@
 # JPOGAME_e-artsup
-Projet de jeu video pour les JPO d'e-artsup Paris
+Projet de jeu video pour "ScareNight"
 Capucine : Programation
 Killian : Programation
 Stevan : Sprite de la map et decord, des enfants
