@@ -26,10 +26,7 @@ namespace JPO
       
         void Update()
         {
-            //if(PauseController.IsPaused || isWaiting)
-            //{
-            //return
-            //}
+        
             MoveToWaypoint();
         }
 
@@ -37,11 +34,20 @@ namespace JPO
         {
             Transform target = waypoints[currentWaypointIndex];
 
-            transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed *Time.deltaTime);
+            
 
             if (Vector2.Distance(transform.position, target.position) < 0.1f)
             {
-                StartCoroutine(WaitAtWaypoint());
+                if (!isWaiting)
+                {
+                    transform.position = target.position;
+                    StartCoroutine(WaitAtWaypoint());
+                }
+
+            }
+            else
+            {
+                transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
             }
 
         }
