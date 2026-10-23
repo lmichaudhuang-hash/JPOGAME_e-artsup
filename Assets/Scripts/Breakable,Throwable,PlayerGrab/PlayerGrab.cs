@@ -26,8 +26,7 @@ namespace JPO
             Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, grabRadius);
             foreach (var hit in hits)
             {
-                Throwable t = hit.GetComponent<Throwable>();
-                if (t != null)
+                if (hit.TryGetComponent<Throwable>(out Throwable t))
                 {
                     heldObject = t;
                     t.PickUp(holdPoint);
