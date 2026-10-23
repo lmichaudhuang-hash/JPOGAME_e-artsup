@@ -287,7 +287,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7858,6 +7858,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8a05de0ac134f4f9d01bef6b9da077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachinePixelPerfect
+--- !u!1001 &567969779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.942314
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 635404103194087802, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8483403010941038044, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
+      propertyPath: m_Name
+      value: Enemy2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6fabe72219205bd49a2438fdd172ba2c, type: 3}
 --- !u!1 &652263823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7945,7 +8002,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint_01
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8852,7 +8909,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint_03
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10275,7 +10332,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint_02
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10551,6 +10608,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2969717354975156906, guid: 9ff47eaf1229733499b38b0eef408cdb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5310434452514291305, guid: 9ff47eaf1229733499b38b0eef408cdb, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7089632562087429757, guid: 9ff47eaf1229733499b38b0eef408cdb, type: 3}
@@ -10902,3 +10963,4 @@ SceneRoots:
   - {fileID: 1654007226}
   - {fileID: 29918207}
   - {fileID: 1288087760}
+  - {fileID: 567969779}

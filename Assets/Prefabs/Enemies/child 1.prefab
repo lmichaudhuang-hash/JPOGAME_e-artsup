@@ -110,8 +110,8 @@ MonoBehaviour:
   damageBlinkInterval: 0.05
   hitAudio: {fileID: 8300000, guid: c65dde46ffd519c499b5c60e70071a02, type: 3}
   deathAudio: {fileID: 8300000, guid: 9b5d02fb1b0813842a8d1f3016820091, type: 3}
-  candyPrefab: {fileID: 0}
-  itemDropChance: 0.5
+  candyPrefab: {fileID: 2998674834268657400, guid: e1f76108fcfff0a44a05316239839917, type: 3}
+  itemDropChance: 1
 --- !u!114 &6142061507925724310
 MonoBehaviour:
   m_ObjectHideFlags: 0

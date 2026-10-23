@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 4854214301686015850}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.03, y: 0, z: 0}
+  m_LocalScale: {x: 5.57, y: 5.57, z: 5.57}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 635404103194087802}
@@ -78,10 +78,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -274155867
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 88a24776525d17d4e8be235c345e42dd, type: 3}
+  m_Sprite: {fileID: -145325076498124820, guid: e44bac95a0c8be741a6c32f5ea307b69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,12 +101,12 @@ GameObject:
   m_Component:
   - component: {fileID: 635404103194087802}
   - component: {fileID: 9147746226444165366}
-  - component: {fileID: 7027955418320675645}
+  - component: {fileID: 8923983354085139204}
   - component: {fileID: 8848391118422674216}
   - component: {fileID: 4928316911254730084}
   - component: {fileID: 3993213732676891701}
   m_Layer: 7
-  m_Name: Enemy2
+  m_Name: Adult 6
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,7 +174,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.60259044, y: 0.84273237}
   m_EdgeRadius: 0
---- !u!114 &7027955418320675645
+--- !u!114 &8923983354085139204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -183,25 +183,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 8483403010941038044}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097a77845916d2347b310eaf65406b74, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dc98da2e7c5aa846a03a07cffc03b9d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JPO.Enemy
+  m_EditorClassIdentifier: Assembly-CSharp::JPO.Enemy2
   projectilePrefab: {fileID: 774447363827149198, guid: 68efad0c82c054644864d6657c765bd0, type: 3}
   firePositionOffset: {x: 0, y: 0.3}
-  projectilePerWave: 20
-  waveCooldownDuration: 5
-  delayBetweenProjectile: 0.1
+  projectilePerWave: 1
+  waveCooldownDuration: 2
+  delayBetweenProjectile: 1
   playerDetectionRadius: 8
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
   enemySprite: {fileID: 8124124673429401554}
-  damageBlinkFadeDuration: 0.05
-  damageBlinkInterval: 0.05
+  damageBlinkFadeDuration: 0.1
+  damageBlinkInterval: 0.2
   hitAudio: {fileID: 8300000, guid: c65dde46ffd519c499b5c60e70071a02, type: 3}
   deathAudio: {fileID: 8300000, guid: 9b5d02fb1b0813842a8d1f3016820091, type: 3}
   healthItemPrefab: {fileID: 4565873510262096032, guid: 8d2b6719d46c46647b2ec51dcf19ab2d, type: 3}
-  itemDropChance: 0.5
+  itemDropChance: 1
 --- !u!114 &8848391118422674216
 MonoBehaviour:
   m_ObjectHideFlags: 0
