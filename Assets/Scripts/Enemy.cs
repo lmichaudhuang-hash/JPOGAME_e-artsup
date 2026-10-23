@@ -25,7 +25,7 @@ namespace JPO
         [SerializeField] private AudioClip deathAudio;
 
         [Header("Item Drop")]
-        [SerializeField] private HealthItem healthItemPrefab;
+        [SerializeField] private Candy candyPrefab;
         [SerializeField, Range(0f, 1f)] private float itemDropChance = 0.5f;
 
         private bool _hasDetectedPlayer;
@@ -143,7 +143,7 @@ namespace JPO
                 // Drop health item
                 if (itemDropChance > 0 && itemDropChance >= Random.value)
                 {
-                    Instantiate(healthItemPrefab, transform.position, Quaternion.identity);
+                    Instantiate(candyPrefab, transform.position, Quaternion.identity);
                 }
                 // Play death audio
                 _source.PlayOneShot(deathAudio, 0.25f);
